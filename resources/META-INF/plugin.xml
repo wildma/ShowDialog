@@ -1,0 +1,38 @@
+<idea-plugin>
+  <id>com.wildma.plugin.showdialog</id>
+  <name>ShowDialog</name>
+  <version>1.0</version>
+  <vendor email="wildma58@163.com" url="https://github.com/wildma">wildma</vendor>
+
+  <description><![CDATA[
+      show dialog,show dialog,show dialog,show dialog.<br>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      add a show dialog function,add a show dialog function.<br>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="ShowDialog.ShowDialogAction" class="com.wildma.dialog.ShowDialogAction" text="ShowDialog"
+            description="show a dialog">
+      <add-to-group group-id="EditMenu" anchor="first"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="alt Q"/>
+    </action>
+  </actions>
+
+</idea-plugin>
