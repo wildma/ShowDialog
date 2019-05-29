@@ -5,11 +5,11 @@
   <vendor email="wildma58@163.com" url="https://github.com/wildma">wildma</vendor>
 
   <description><![CDATA[
-      show dialog,show dialog,show dialog,show dialog.<br>
+      You can show a dialog, and you can enter your name here, then your name will be displayed.<br>
     ]]></description>
 
   <change-notes><![CDATA[
-      add a show dialog function,add a show dialog function.<br>
+      Add a function to show dialog and optimize some details.<br>
     ]]>
   </change-notes>
 
@@ -18,9 +18,7 @@
 
   <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
        on how to target different products -->
-  <!-- uncomment to enable plugin in all products
-  <depends>com.intellij.modules.lang</depends>
-  -->
+  <depends>com.intellij.modules.java</depends>
 
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
